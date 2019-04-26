@@ -3,7 +3,7 @@
  
 <i>const EnhancedComponent = higherOrderComponent(WrappedComponent);</i>
 
-<b>What is the difference between Component and Higher Order Component?<b>
+<b>What is the difference between Component and Higher Order Component?</b>
 <p>A component transforms props into UI, a higher-order component transforms a component into another component.</p>
 
 <b>Ist way:</b>
