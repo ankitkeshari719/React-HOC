@@ -7,24 +7,26 @@
 <p>A component transforms props into UI, a higher-order component transforms a component into another component.</p>
 
 <b>Ist way:</b>
-<i>import React from "react";
+
+import React from "react";
 
 const withClass = props => 
 <div className={props.classes}>{props.children}</div>;
-export default withClass;</i>
+export default withClass;
 
 <b>Use</b>
-<i><WithClass classes="main">.... </WithClass></i>
+<WithClass classes="main">.... </WithClass>
 
 <b>2nd Way:</b>
-<i>const withClass = (WrappedComponent, className) => {
+
+const withClass = (WrappedComponent, className) => {
  return props => (
    <div className={className}>
      <WrappedComponent {...props} />
    </div>
  );
 };
-export default withClass;</i>
+export default withClass;
 
 <b>Use</b>
-<i>export default withClass(TogglePersons, classes.TogglePage);</i>
+export default withClass(TogglePersons, classes.TogglePage);
